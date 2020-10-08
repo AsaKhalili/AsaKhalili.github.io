@@ -1,0 +1,280 @@
+/* the whole page breaks into : 3 rows 
+the header breaks into 7 columns 
+nav bar is 5 columns  */
+
+body{
+  padding: 0px;
+  margin: 0px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 13px;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header{
+  background-color: #3a6191;
+  display: grid;
+  grid-template-columns: 25% 60% 15%;
+}
+
+.left-side-h, .middle-h, .right-side-h{
+  display: grid;
+}
+
+.left-side-h{
+  grid-template-columns: 30% 70%;
+}
+
+.board-logo {
+  background-color: #86b6e7;
+  border-radius: 5px;
+  height: 35px;
+  margin: 5px 10px;
+  /* text-align: center; */
+  padding: 0px 5px;
+  color: white;
+}
+
+.board-logo img, .board-logo p{
+  display: inline-block;
+  margin-left: 5px;
+  text-align: center;
+}
+
+.board-logo p{
+  margin: 5px;
+}
+
+.board-logo img{
+  height: 20px;
+  margin-top: 6px;
+}
+
+.board-logo, .search-area{
+  display: inline-block;
+}
+
+.search-area{
+  height: 35px;
+  background-color: #86b6e7;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.search-area input, .fa-search{
+  display: inline-block;
+  text-align: center;
+}
+
+.fa-search{
+  margin: 1px 3px;
+  padding: 10px 40px;
+  color: #fcfcfc9e;
+}
+
+.search-area input{
+  background-color: #86b6e7;
+  border: none;
+  border-radius: 4px;
+  height: 30px;
+  margin-bottom: 7px;
+}
+
+.middle-h img{
+  height: 20px;
+  text-align: center;
+  margin: 10px 300px;
+}
+
+.right-side-h{
+  float: right;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.fa-plus, .fa-info, .fa-bell, .fa-user{
+  display: inline-block;
+  background-color: #86b6e7;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 30px;
+  padding: 8px;
+  border-radius: 4px;
+  margin-right: 6px;
+  color: white;
+}
+
+/* ----------------------------------- */
+
+.navigation-bar{
+  background-color: #266fba;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  color: white;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.n-right, .n-left{
+  display: inline-block;
+}
+
+.board-name, .features{
+  display: inline-block;
+}
+
+#list-type li{
+  display: inline-block;
+}
+
+.board-name{
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.btn-type{
+  background-color: #266fba;
+  border: none;
+  font-size: 15px;
+  color: white;
+}
+
+.n-right a{
+  float: right;
+  color: white;
+  font-size: 15px;
+  margin-top: 20px;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.container{
+  background-color: #266fba;
+  height: calc(100vh - 115px);
+  display: grid;
+  grid-template-rows: 1fr;
+  column-gap: 10px;
+  grid-template-columns: 320px;
+  color: white;
+  grid-auto-flow: column;
+}
+
+.task-card, .add-card{
+  display: inline-block;
+}
+
+.task-card {
+  height: 550px;
+  background-color: #d1cdd1;
+  margin-left: 10px;
+  width: 300px;
+  border-radius: 4px;
+}
+
+.writings {
+  overflow: auto;
+  overflow-y: scroll;
+  height: 500px;
+  background-color: #d1cdd1;
+  width: 300px;
+  border-radius: 3px;
+}
+
+.title{
+  font-size: 15px;
+  color: black;
+  margin-left: 10px;
+  font-weight: bolder;
+}
+
+.tasks-list li{
+  background-color: white;
+  margin: 8px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: -33px;
+  color: black;
+}
+
+.btn-add-task {
+  margin-top: 15px;
+  margin-left: 10px;
+  background: #d1cdd1;
+  color: #0000004f;
+  border: none;
+  font-size: 16px;
+}
+
+.btn-add-task:hover {
+  margin-top: 15px;
+  margin-left: 10px;
+  background: #636869;
+  color: white;
+  border: none;
+  font-size: 16px;
+}
+
+.new-task{
+  margin-top: 15px;
+  margin-left: 10px;
+  background-color: white;
+  color: black;
+  border: none;
+  font-size: 16px;
+}
+
+
+.btn-add-card {
+  background-color: #0000ff26;
+  border: none;
+  height: 40px;
+  width: 300px;
+  color: #ffffff85;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.btn-add-card:hover {
+  background-color: white;
+  border: none;
+  height: 40px;
+  width: 300px;
+  color: black;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.card-title{
+  background-color: #ffffff85;
+  border: none;
+  height: 40px;
+  width: 300px;
+  color: white;
+  border-radius: 5px;
+  margin-right: 5px;
+  padding-left: 10px;
+  margin-left: 5px;
+}
+
+::placeholder{
+  color: #0000008c;
+}
+
+.hide{
+  display: none;
+}
+
+.show{
+  display: block;
+}
